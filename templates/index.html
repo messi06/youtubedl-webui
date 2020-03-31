@@ -6,6 +6,21 @@
     <title>ES YT-DL</title>
 </head>
 <body>
-    
+    <form action="/download" method="POST">
+        <input type="text" name="url" id="url" required>
+        
+        <select id="ext" name="ext" required>
+            <option value="mp3">mp3</option>
+            <option value="mp4">mp4</option>
+        </select>
+
+        <select id="qal" name="qal" required>
+            <option value="720">720p</option>
+            <option value="1080">1080p</option>
+            <option value="9999">Best</option>
+        </select>
+
+        <input type="submit" value="Abschicken">
+    </form>
 </body>
 </html>
