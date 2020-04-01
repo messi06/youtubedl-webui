@@ -1,4 +1,4 @@
-from flask import Flask, send_file, render_template, request
+from flask import Flask, send_file, send_from_directory, render_template, request
 from os import system
 
 app = Flask(__name__)
@@ -7,6 +7,10 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     return render_template("index.html")
+
+@app.route('/assets/<path:path>')
+def send_js(path):
+    return send_file('/yt/templates/assets/'+path)
 
 @app.route('/download', methods=['POST'])
 def dwn():
