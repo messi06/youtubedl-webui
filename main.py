@@ -1,8 +1,9 @@
-from flask import Flask, send_file, send_from_directory, render_template, request
+from flask import Flask, send_file, render_template, request
 from os import system
 
 app = Flask(__name__)
 
+iph = "0.0.0.0"
 
 @app.route('/')
 def index():
@@ -43,7 +44,7 @@ def dwn():
             error = 1
     else:
         error = 1
-    
+
     if(error == 0):
         ret = send_file('/yt/'+name+'.'+ext, as_attachment=True)
     else:
@@ -52,7 +53,7 @@ def dwn():
     return ret
 
 if __name__ == '__main__':
-    app.run(host="0.0.0.0")
+    app.run(host=iph)
 
 # youtube-dl -o 1.%(ext)s
 # -f "bestvideo[height<=720]+bestaudio/best[height<=720]" --merge-output-format mp4
