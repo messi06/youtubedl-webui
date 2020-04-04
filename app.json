@@ -1,5 +1,6 @@
 {
   "name": "youtubedl-webui",
   "repository": "https://github.com/ucodespace/youtubedl-webui/tree/heroku",
-  "keywords": ["youtube", "python", "static"]
+  "keywords": ["youtube", "python", "static"],
+  "stack": "container"
 }
