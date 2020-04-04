@@ -3,7 +3,6 @@ FROM alpine:3.7
 LABEL maintainer "Phil/ucode1337 <phil@ucode.space>"
 
 RUN mkdir /yt
-VOLUME /yt
 COPY . /yt/.
 
 RUN apk --no-cache add python3 ffmpeg && \
