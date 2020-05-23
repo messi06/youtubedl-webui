@@ -1,7 +1,7 @@
 # youtubedl-webui
 ![ydaft](https://forthebadge.com/images/badges/you-didnt-ask-for-this.svg)
 <br>
-![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg) 
+![Maintenance](https://raster.shields.io/badge/Maintained-not--really-red.png) 
 <br>
 [![Mirroredfromucode](https://img.shields.io/badge/Mirrored-from%20ucodespace--git-blue)](https://git.ucode.space/Phil/youtubedl-webui)
 <br>
