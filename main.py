@@ -46,12 +46,10 @@ def dwn():
         else:
             error = 1
 
-        if(error == 0):
+        
             ret = send_file('/yt/'+name+'.'+ext, as_attachment=True)
-        else:
-            ret = render_template("error.html")
-    except:
-        ret = render_template("error.html")
+
+
     return ret
 
 if __name__ == '__main__':
