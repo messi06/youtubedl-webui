@@ -36,9 +36,9 @@ def dwn():
             system('youtube-dl --extract-audio --add-metadata --audio-format "mp3" --embed-thumbnail -o "/yt/'+name+'.%(ext)s" '+url)
         elif (ext == "mp4"):
             if(qal == "720"):
-                system('youtube-dl --add-metadata -f "best[height<=720]" --recode-video mp4 -o "/yt/'+name+'.%(ext)s" '+url)
+                system('youtube-dl -f '+url)
             elif(qal == "1080"):
-                system('youtube-dl --add-metadata -f "best[height<=1080]" --recode-video mp4 -o "/yt/'+name+'.%(ext)s" '+url)
+                system('youtube-dl -f -o "/yt/vid" '+url)
             elif(qal == "9999"):
                 system('youtube-dl --add-metadata -f "best" --recode-video mp4 -o "/yt/'+name+'.%(ext)s" '+url)
             else:
